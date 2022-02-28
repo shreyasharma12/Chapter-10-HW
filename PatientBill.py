@@ -6,7 +6,7 @@ import ProcedureClass as b
 def main(): 
 
 
-    my_patient = a.Patient(1,"Matt Jones","123 Main st, Waco TX 76706","254-555-7415",'TRUE')
+    my_patient = a.Patient(1,"Matt Jones","123 Main st, Waco TX 76706","254-555-7415","TRUE")
 
 
     my_procedure1 = b.Procedure("Physical Exam","2/15/2022","Dr. Irvine",250,1)
@@ -35,7 +35,7 @@ def main():
 
 
     
-    if my_procedure1.get_NameID == my_patient.get_patientID():
+    if my_procedure1.get_NameID() == my_patient.get_patientID():
         total_charges += my_procedure1.get_charges()
 
     if my_procedure2.get_NameID() == my_patient.get_patientID():
